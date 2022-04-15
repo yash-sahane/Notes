@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  background-color: #e0ebe4;
+}
+/* ****************************navbar******************************* */
+.navbar {
+  background-color: #112031;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wholenav {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+.navl {
+  width: 20%;
+}
+.navr {
+  width: 80%;
+}
+.navl h3 {
+  color: white;
+  margin-left: 20px;
+}
+.navbar a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: all ease-in-out 0.5s;
+  list-style: none;
+}
+.navbar a:hover {
+  font-size: 18px;
+  font-weight: bold;
+}
+.navr ul {
+  margin-right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.navr li {
+  list-style-type: none;
+  padding-right: 10px;
+  width: 90px;
+}
+/* **************************************alert************************************* */
+.alert {
+  padding: 5px;
+  background-color: rgb(209 236 241);
+  display: flex;
+  justify-content: space-between;
+}
+.alert .cross i {
+  font-size: 12px;
+  padding: 4px 6px;
+}
+.alert .cross i:hover {
+  cursor: pointer;
+}
+.alert .cross {
+  background-color: rgb(82, 127, 250);
+  font-size: 12px;
+  border-radius: 100px;
+}
+/* ***********************************alertred************************************* */
+.alertred {
+  padding: 5px;
+  background-color: #f72d1e;
+  display: flex;
+  justify-content: space-between;
+}
+.alertred .cross i {
+  font-size: 12px;
+  padding: 4px 6px;
+}
+.alertred .cross i:hover {
+  cursor: pointer;
+}
+.alertred .cross {
+  background-color: black;
+  font-size: 12px;
+  border-radius: 100px;
+}
+
+#alertredempty {
+  visibility: hidden;
+  opacity: 0;
+}
+/* ***********************************mainpage***************************** */
+.main {
+  width: 60%;
+  margin-left: 20%;
+  z-index: 999;
+}
+.main h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.main table {
+  width: 100%;
+}
+.main .list {
+  margin-top: 20px;
+}
+/* *****************************form********************************* */
+.addform form {
+  display: flex;
+  flex-direction: column;
+}
+.addform label {
+  font-weight: bold;
+}
+.addform textarea {
+  outline: none;
+  border: 2px solid rgb(216, 210, 210);
+  transition: 0.5s;
+}
+.addform #title {
+  outline: none;
+  border: 2px solid rgb(216, 210, 210);
+  transition: 0.5s;
+}
+.addform #title:focus {
+  border: 2px solid black;
+}
+textarea:focus {
+  border: 2px solid black;
+}
+.title {
+  margin-top: 10px;
+}
+#title {
+  padding: 5px;
+}
+#description {
+  padding: 5px;
+}
+.desc {
+  margin-top: 10px;
+}
+.subbtn {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(19, 57, 230);
+  margin-top: 10px;
+  width: 80px;
+  padding: 6px 8px;
+  transition: all ease 0.3s;
+}
+.subbtn:hover {
+  font-weight: 900;
+  font-size: 14px;
+}
+/* *********************************table********************************** */
+.list {
+  width: 75%;
+  margin: 20px 0 20px 12.5%;
+  font-size: 14px;
+}
+.dataTables_filter {
+  margin-bottom: 5px;
+}
+tbody tr td:nth-child(4) {
+  display: flex;
+  justify-content: center;
+}
+table {
+  border: 1px solid rgb(185, 184, 184);
+}
+#myTable tr th,
+td {
+  padding: 5px;
+  border-collapse: collapse;
+  border: 1px solid rgb(185, 184, 184);
+}
+.dataTables_filter label input[type="search"]:focus {
+  transition: 0.5s;
+}
+.dataTables_filter label input:focus {
+  border: 1px solid black;
+}
+#myTable tr th:nth-child(1) {
+  width: 6%;
+}
+#myTable tr th:nth-child(2) {
+  width: 20%;
+}
+#myTable tbody {
+  padding-left: 10px;
+}
+#myTable tr th:nth-child(4) {
+  width: 10%;
+}
+thead tr {
+  text-align: justify;
+}
+thead,
+tbody {
+  border: 1px solid black;
+}
+tbody tr td .edit {
+  color: blue;
+}
+.del {
+  color: red;
+}
+.list #myTable tbody tr td i {
+  padding: 5px;
+}
+.list #myTable tbody tr td i:hover {
+  cursor: pointer;
+}
+.formedit,
+.formdelete {
+  background-color: white;
+  border: none;
+}
+
+/* **************************************modal************************************* */
+.popup-bg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.box {
+  width: 40%;
+  height: 265px;
+  background: white;
+  border-radius: 5px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.maintitle,
+.maindescription {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.box h3 {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: -15px;
+}
+.poptitle,
+.popdesc {
+  font-weight: bold;
+  font-size: 15px;
+}
+.maintitle input,
+.maindescription textarea {
+  padding: 5px;
+  outline: none;
+}
+.maindescription textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 80px;
+  min-height: 80px;
+}
+.formbtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+.formsubmit,
+.formclose {
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.formclose {
+  color: white;
+  background: #83888d;
+  border: none;
+  border-radius: 3px;
+  margin-right: 7px;
+}
+.formclose:hover {
+  background-color: #6c757d;
+}
+.formsubmit {
+  border: none;
+  border-radius: 3px;
+  background: #007bff;
+  color: white;
+}
+.formsubmit:hover {
+  background-color: #0059ff;
+}
+.box .maintitle input {
+  border: none;
+  border-bottom: 2px solid rgb(216, 210, 210);
+  transition: all ease-in-out 0.4s;
+}
+.box .maintitle input:focus {
+  border-bottom: 2px solid black;
+}
+.box .maindescription textarea {
+  border: 2px solid rgb(216, 210, 210);
+  transition: all ease-in-out 0.4s;
+}
+.box .maindescription textarea:focus {
+  border: 2px solid black;
+}
+.crossclose {
+  margin-left: auto;
+  cursor: pointer;
+  padding: 2px 4px;
+  color: rgb(184, 183, 183);
+  font-size: 15px;
+  z-index: 1;
+  border-radius: 50px;
+}
+.crossclose:hover {
+  color: rgb(121, 120, 120);
+}
